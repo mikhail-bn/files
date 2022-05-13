@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 0px solid red;
+}
+.box1{
+    background-color: red;
+    padding: 10px;    
+}
+.box2{
+    background-color: blue;
+    padding: 10px;  
+}
+p:hover{
+    color: blue;    
+}
