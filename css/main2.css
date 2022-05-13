@@ -15,6 +15,14 @@
     background-color: blue;
     padding: 10px;  
 }
+.box3{
+    background-color: green;
+    padding: 10px;  
+}
 p:hover{
     color: blue;    
+}
+div.parent{
+    display: flex;
+    flex-wrap: wrap;
 }
