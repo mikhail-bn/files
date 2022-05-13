@@ -23,6 +23,14 @@ p:hover{
     color: blue;    
 }
 div.parent{
+    height: 600px;
+    border: 1px blue solid;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.parent div:nth-child(2){
+order: -1;
 }
