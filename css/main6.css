@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 1170px; /* определение размеров блока */
+    margin: 0 auto; /* центрирование блока по центру */
+}
+.menu {
+    border: 1px #1c015c solid;
+    
+}
+
+.menu__inner {
+    display: flex; /* элементы друг за другом, а не друг под    другом */
+    justify-content: space-between; /* разнос 2х блоков по сторонам */
+    align-items: center; /* центрирование по вертикали */
+    
+}
+.nav {
+    display: flex; /* элементы друг за другом, а не друг под другом */
+    list-style: none; /* убираем точки перед списком */
+    padding: 0; /* обнуление внутренних отступов блока */
+    margin: 0; /* обнуление внешних отступов блока */
+    text-transform: uppercase; /* всё заглавными */ 
+    color: #999;
+
+}
+.nav li a { /*указание конкретного селектора для ссылки */
+    text-decoration: none; /* убрать подчеркивание */
+    color: #999;
+    padding: 10px 15px; /* ограничение блока ссылки для  уменьшения эффекта скачущего меню */
+}
+.nav li a:hover {
+    color: white;
+    background-color: #1c015c;
+    border-radius: 5px;
+    
+}
+img  {
+    padding: 0; /* обнуление внутренних отступов блока */
+    margin: 0; /* обнуление внешних отступов блока */
+}
+.logo {
+    width: 54px;
+    height: 54px;
+}
