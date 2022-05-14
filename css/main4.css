@@ -4,12 +4,10 @@
     --bg: rgb(214, 214, 214);
 }
 /*  Наследование строки безопасности от html для элементов */
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
 /*  Строка безопасности отступов для блоков */
-
 html {
     box-sizing: border-box;
     font-size: 18px;
@@ -29,28 +27,115 @@ body,p,h1,h2,h3,h4,ul,ol{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/* Позиционирование элементов в родительском блоке */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-/* Селектор для применения родительского стиля, margin: 0 auto - выравнивание по центру */
+/* Селектор для применения родительского стиля, margin: 0 auto - выравнивание child-блоков по центру */
 .row > div {
      padding: 15px;
      margin: 0 auto;
      background-color: var(--bg);;
-     border: 1px black solid;
-     
+     border: 1px rgb(94, 94, 94) solid;
+     border-radius: 10px;     
 }
+/* Условия независимо от размеров экрана */
+/* Для 4х колонок */
 .col-3 {
-    width: calc(25% - var(--gutter));
-    
+    width: calc(25% - var(--gutter));    
 }
+
+/* Для 2х колонок */
 .col-6 {
     width: calc(50% - var(--gutter));
 }
+
+/* Для одной колоноки */
 .col-12 {
     width: calc(100% - var(--gutter));
 }
+
+/* Для 3х колонок */
 .col-4 {
     width: calc(33.33% - var(--gutter));
 }
+
+/* Писать медиазапросы после основных стилей! */
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 100%;
+        background-color: rgb(3, 109, 128);
+    }
+/* Срабатывание условия для экранов меньше 992px для 4х колонок */
+.col-lg-3 {
+    width: calc(25% - var(--gutter));    
+}
+
+/* Срабатывание условия для экранов меньше 992px для 2х колонок */
+.col-lg-6 {
+    width: calc(50% - var(--gutter));
+}
+
+/* Срабатывание условия для экранов меньше 992px для одной колоноки */
+.col-lg-12 {
+    width: calc(100% - var(--gutter));
+}
+
+/*  Срабатывание условия для экранов меньше 992px для 3х колонок */
+.col-lg-4 {
+    width: calc(33.33% - var(--gutter));
+}
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        background-color: rgb(42, 167, 189);
+    }
+    /*  Срабатывание условия для экранов меньше 768px для 4х колонок */
+.col-md-3 {
+    width: calc(25% - var(--gutter));    
+}
+
+/*  Срабатывание условия для экранов меньше 768px для 2х колонок */
+.col-md-6 {
+    width: calc(50% - var(--gutter));
+}
+
+/*  Срабатывание условия для экранов меньше 768px для одной колоноки */
+.col-md-12 {
+    width: calc(100% - var(--gutter));
+}
+
+/* Срабатывание условия для экранов меньше 768px для 3х колонок */
+.col-md-4 {
+    width: calc(33.33% - var(--gutter));
+}
+
+} 
+@media screen and (max-width:576px) {
+    .container {
+        background-color: rgb(102, 231, 253);
+    }
+    /* Срабатывание условия для экранов меньше 576px для 4х колонок */
+.col-sm-3 {
+    width: calc(25% - var(--gutter));    
+}
+
+/*  Срабатывание условия для экранов меньше 576px для 2х колонок */
+.col-sm-6 {
+    width: calc(50% - var(--gutter));
+}
+
+/* Срабатывание условия для экранов меньше 576px для одной колоноки */
+.col-sm-12 {
+    width: calc(100% - var(--gutter));
+}
+
+/* Срабатывание условия для экранов меньше 576px для 3х колонок */
+.col-sm-4 {
+    width: calc(33.33% - var(--gutter));
+}
+
+} 
