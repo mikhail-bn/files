@@ -1,18 +1,56 @@
-*{
+* {
 background-color: rgb(224, 217, 241);
 font-family: Tahoma;
-font-weight: 600;
-font-size: 14px;
+font-weight: 400;
+font-size: 16px;
 line-height: 20px;
 box-sizing: border-box;
 }
-h1{
+a {
+    color: rgb(168, 8, 8);
+    text-decoration: dashed ;
+}
+h1 {
     height: 200px;
-    background-color: rgb(216, 240, 128);
+    background-color: #d8f080;
     background-image: url(../img/git.png);
     background-repeat: no-repeat;
     text-align: right;
-    padding: 10px;
-    font-size: 24px;
-    
+    padding: 20px;
+    font-size: 24px; 
+    font-weight: 600;
+}
+
+p {
+    border: 1px solid rgb(168, 8, 8);
+    background-color: hsl(73, 79%, 72%);
+    border-radius: 5px;
+    color: rgb(168, 8, 8);
+    font-weight: 700;
+    padding: 5px;
+}
+
+span {
+    text-decoration: line-through;
+}
+.buy {
+    background-color: hsl(73, 79%, 72%);
+    text-align: center;
+}
+.copyright::before {
+    content: "\00A9"; 
+    color: rgb(168, 8, 8) ;     
+}
+.copyright {
+    text-align: center;
+}
+button {
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.list li:nth-child(4){
+color: rgb(168, 8, 8);
+text-decoration: underline;
 }
