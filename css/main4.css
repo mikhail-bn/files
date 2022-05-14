@@ -1,0 +1,53 @@
+/* ОбЪявление переменных с присвоением значения в 15px и цвета */
+:root {
+    --gutter: 15px;
+    --bg: rgb(214, 214, 214);
+}
+/*  Наследование строки безопасности от html для элементов */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*  Строка безопасности отступов для блоков */
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+/* Строка безопасности отступов и позиционирования для тегов*/
+body,p,h1,h2,h3,h4,ul,ol{
+    margin: 0;
+    padding: 0;
+} 
+.header {
+    background-color: rgb(105, 105, 105);
+}
+/*  margin: 0 auto выравнивание контейнера по цвету по центру */
+.container {
+    background-color: rgb(172, 172, 172);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Селектор для применения родительского стиля, margin: 0 auto - выравнивание по центру */
+.row > div {
+     padding: 15px;
+     margin: 0 auto;
+     background-color: var(--bg);;
+     border: 1px black solid;
+     
+}
+.col-3 {
+    width: calc(25% - var(--gutter));
+    
+}
+.col-6 {
+    width: calc(50% - var(--gutter));
+}
+.col-12 {
+    width: calc(100% - var(--gutter));
+}
