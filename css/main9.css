@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box {
+    background: rgb(5,61,59);
+    background: linear-gradient(90deg, rgba(5,61,59,1) 0%, rgba(16,201,195,1) 100%); 
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.inner__box {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div.item {
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+}
+i  {
+    color: white;
+    padding-right: 30px;
+    
+}
+.inner__item {
+    display: block;
+    align-items: left;
+    
+}
+.number {
+    color: white;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+.text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.fa-briefcase{
+    font-size: 60px;    
+}
+.fa-clock-o {
+    font-size: 60px; 
+}
+.fa-star-o {
+    font-size: 60px; 
+}
+.fa-heart-o {
+    font-size: 60px; 
+}
+
