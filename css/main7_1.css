@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    background-color: #052934;
+}
+.counter {
+    display: flex;
+    width: 1170px;
+    background-color: #052934;
+    margin: 0 auto;
+    padding: 40px ;
+    justify-content: space-around;
+}
+.item {
+    text-align: center;
+}
+.number{
+    font-family: Georgia;
+    color: #a15934;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.text {
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 10px 0 0 0;
+}
