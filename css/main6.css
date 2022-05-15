@@ -8,7 +8,7 @@
     margin: 0 auto; /* центрирование блока по центру */
 }
 .menu {
-    border: 1px #1c015c solid;
+    
     
 }
 
@@ -16,6 +16,7 @@
     display: flex; /* элементы друг за другом, а не друг под    другом */
     justify-content: space-between; /* разнос 2х блоков по сторонам */
     align-items: center; /* центрирование по вертикали */
+    border: 1px #1c015c solid;
     
 }
 .nav {
