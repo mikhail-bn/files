@@ -104,12 +104,14 @@ ul {
     height: 120px;
     color: #fff;
     
+    
 }
 .container__story {
     display: flex;
     width: 1011px;
     margin: 0 auto;
     padding-left: 20px;
+    justify-content: space-between;
     
     
 }
@@ -119,22 +121,24 @@ ul {
     line-height: 26px;
     text-align: left;    
 }    
-.story__button a {    
+.story__button  {    
     font-size: 22px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);  
     text-transform: uppercase;
     text-decoration: none;
+    padding: 15px 70px;
+    
 }
-.story__button > a:hover {
+.story__button:hover {
     background-color: #c62314;
     color: #fff;
     text-decoration: none;
+    border-radius: 6px;
 }
-.story__button {
+
     
-    margin: 0 auto;
-}
+
 
 .pricing {
 }
