@@ -43,6 +43,11 @@ body {
     font-size: 60px;
     color: #fff;
 }
+.nav {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
 .nav  li a {
     color: #fff;
     padding: 10px 15px;
@@ -53,15 +58,6 @@ body {
     background-color: rgb(19, 14, 39);
     border-radius: 5px;
     text-decoration: none;
-}
-ul {
-    display: flex;
-    list-style: none;
-    font-size: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 22px;   
 }
 .text__content {
     width: 500px;
@@ -115,9 +111,6 @@ img {
     width: 140px;
     height: 140px;
 }
-.item__img {
-   
-}
 .item__text {
     max-width: 180px;
     padding-top: 50px;    
@@ -162,10 +155,6 @@ img {
     text-decoration: none;
     border-radius: 6px;
 }
-
-    
-
-
 .pricing {
     background-color: #efefef;
 }
@@ -186,14 +175,12 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 0 0 65px 20px;
-    
 }
 .item__pricing {
     background-color: #fff;
     min-width: 318px;
     padding: 38px 60px 16px;
     text-align: center;
-    
 }
 .name__pricing {
     font-size: 22px;
@@ -209,21 +196,28 @@ img {
     text-transform: uppercase;
 }
 .text__pricing {
-text-align: center;
-padding: 35px 0 35px;
+    text-align: center;
+    padding: 35px 0 35px;
 }    
-.button a {
+a > .button  {
     min-width: 205px;
     min-height: 49px;
     background-color: rgb(19, 14, 39);
     text-align: center;
-    text-decoration: none;
     border-radius: 6px;
     text-transform: uppercase;    
     font-size: 22px;
     font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    text-align: center;
+    color: rgb(255, 255, 255);      
+    margin: 0 auto;
+    padding-top: 10px;
+}
+a > .button:hover {
+    text-decoration: none;
+    background-color: rgb(198, 35, 20);
+}
+a {
+    text-decoration: none;
 }
 .footer {
     display: flex;
