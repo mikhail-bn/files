@@ -1,0 +1,107 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swapdisplay=swap&subset=cyrillic-ext");
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+.text {
+    
+    
+}
+html {
+    font-size: 20px;
+}
+body {
+    color: black;
+    line-height: 120%;
+    
+    font-family: "Gilroy", sans-serif;    
+}
+.text {
+    color: rgb(3, 3, 94);
+}
+.paragraf {
+    text-shadow: 2px 2px 2px rgba(255, 120, 24, 0.5);
+    
+}
+.text__1 {
+    font-style: italic;
+    
+}
+.text__2 + {
+    color: dodgerblue;
+
+}
+.color {
+    color: chocolate;
+}
+.color__2 {
+    color: brown;
+
+}
+.text__3 {
+    color: darkgreen;
+    font-family: "Lobster";
+}
+.text__4 {
+    color: deeppink;
+    line-height: 150%;
+}
+.text__5 {
+font-family: "Bebas Neue", serif;
+text-decoration: line-through;
+}
+/*.text p {
+    font-weight: 700;
+    font-family: "Lobster";
+}*/
+
+.text span {
+    font-weight: 700;
+}
