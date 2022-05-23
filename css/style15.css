@@ -63,8 +63,9 @@ body {
     
     font-family: "Gilroy", sans-serif;    
 }
-.text {
+.text  {
     color: rgb(3, 3, 94);
+    
 }
 .paragraf {
     text-shadow: 2px 2px 2px rgba(255, 120, 24, 0.5);
@@ -103,5 +104,9 @@ text-decoration: line-through;
 }*/
 
 .text span {
+    font-weight: 700;
+}
+div.color__2 {
+    text-indent: 50px;
     font-weight: 700;
 }
