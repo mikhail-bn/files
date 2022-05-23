@@ -94,8 +94,7 @@ margin: сверху справа_слева снизу;
 	font-size: 30px;
 	max-width: 500px;
 	padding: 50px;
-	margin: 50px;
-    display: block;
+	display: block;
 }
 .image {
 	width: 50%;
@@ -247,3 +246,47 @@ none - Временно удаляет элемент из документа. �
 .Lorem {
     background-color: rgb(255, 1, 1);
 }
+.privet {
+    display: block;
+}
+.block8 {
+    
+    
+}
+.block7 {
+    display: inline-block;
+    background-color: rgb(248, 4, 4);
+    max-width: 200px;
+    max-height: 200px;
+    padding: 15px;
+    overflow: auto;
+}
+.link3 {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: rgb(90, 243, 136);
+}
+.paragraf {
+    display: inline-block;
+    padding: 10px;
+    max-width: 100px;
+    margin-left: 30px;
+    background-color: #794f45;
+    color: #fff;
+}
+.owerflow {
+    padding: 30px;
+    background-color: rgb(225, 0, 255);
+}
+.owerflow1 {
+    padding: 30px;
+    margin: -30px 0 0 0;
+    background-color: rgb(0, 255, 98);
+}
+.text__7 {
+    max-height: 200px;
+    overflow: auto;
+    background-color: rgb(255, 0, 0);
+    display: block;
+}
+
