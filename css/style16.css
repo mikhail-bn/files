@@ -44,6 +44,7 @@ body {
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
+    padding: 20px;
 }
 /* ------------------------------ */
 /* Отступы */
@@ -240,19 +241,14 @@ none - Временно удаляет элемент из документа. �
 	/* display: none; */
 	font-size: 50px;
 }
-.content {
 
-}
 .Lorem {
     background-color: rgb(255, 1, 1);
 }
 .privet {
     display: block;
 }
-.block8 {
-    
-    
-}
+
 .block7 {
     display: inline-block;
     background-color: rgb(248, 4, 4);
@@ -260,6 +256,9 @@ none - Временно удаляет элемент из документа. �
     max-height: 200px;
     padding: 15px;
     overflow: auto;
+    font-size: 18px;
+    color: #fff;
+    line-height: 150%;
 }
 .link3 {
     display: inline-block;
@@ -280,7 +279,7 @@ none - Временно удаляет элемент из документа. �
 }
 .owerflow1 {
     padding: 30px;
-    margin: -30px 0 0 0;
+    margin: -50px 0 0 0;
     background-color: rgb(0, 255, 98);
 }
 .text__7 {
@@ -289,4 +288,44 @@ none - Временно удаляет элемент из документа. �
     background-color: rgb(255, 0, 0);
     display: block;
 }
+.block7__items {
+    font-size: 0;
+}
+.circle200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+.opacity__1 {
+    opacity: 50%
+    ;
+}
+.border {
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+.border__1 {
+    display: inline-block;
+    border-top: 1px solid #000;
+    border-left: 20px double #000;
+    border-bottom: 10px dashed #000;
+    border-right: 5px dotted red;
+    margin-bottom: 30px;
+}
+.link__1 {
+    display: inline-block;
+    box-shadow: 1px 1px 10px red;
+    min-width: 150px;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+.link__2 {
+    display: inline;
+    box-shadow: 1px 1px 5px red;
+    min-width: 150px;
+    text-align: center;    
+}
+
 
