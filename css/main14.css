@@ -22,10 +22,9 @@ body {
     font-family: PTSerif;
 }
 .box__head {
-    background-color: #c62314;
+    
     /*height: 688px;*/
-    background-image: url(../img/99dsjm2iaw_Medium_WW2122503.png);
-    background-repeat: repeat ;
+    background: rgba(198, 35, 20, 0.452) url(../img/99dsjm2iaw_Medium_WW2122503.png) 50% / cover no-repeat;    
     min-height: 688px;
 }
 .container {
