@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
 
+
+
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
 *::before,
@@ -46,24 +48,22 @@ body {
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	padding: 30px;
+	
 }
 .link {
     
     
 }
 ul li {
-    padding: 10px 30px;
-    background: url(../img/icon.png) 100% 0 / 30px no-repeat;
+    background: url(../img/icon.png) right top  / 30px no-repeat;
+	margin: 0 0 10px 0;
     min-height: 30px;
-    font-size: 16px;
-    text-align: right;
-    margin: 2px 0px; 
+    font-size: 16px;    
     align-items: center;   
 }
 .picture__1 {
 	min-height: 800px;
-	background: url(../img/Button.png) 0 0 / no-repeat, #0E1113 url(../img/Heroshot3.png) 50% / cover no-repeat, ;
+	background: #0E1113 url("../img/Heroshot3.png") 50% / cover no-repeat;
 	padding-left: 210px;
 	padding-top: 280px;
 		
@@ -77,4 +77,59 @@ ul li {
 	color: #ffffff;
 	max-width: 583px;
 	margin-bottom: 48px;	
+}
+.img {
+	box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.482);
+	margin-bottom: 48px;
+
+/*------------------------------*/
+
+
+}
+.block2 {
+	background: url("../img/BGImage.png") 50% / cover no-repeat;
+	padding: 50px 0;
+}
+.block2__container {
+	max-width: 1020px;	
+	margin: 10px auto;	
+}
+.item-list {
+	font-size: 0;
+	margin: 0px -12px;
+}
+.item {
+	display: inline-block;
+	width: 25%;
+	padding: 0px 12px;
+	vertical-align: top;
+}
+ .img2  {
+	display: inline-block;
+	width: 76px;
+	text-align: center;
+	vertical-align: top;
+}
+.text__block {
+	display: inline-block;
+	padding: 0px 0px 0px 11px;
+	vertical-align: top;
+	
+}
+.title__text {
+	display: inline-block;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #C40B0B; 
+}
+.text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;	
 }
