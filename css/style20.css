@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+@font-face {
+    font-family: "HelveticaBold";
+        src: url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+         url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");}
+
+@font-face {
+             font-family: "HelveticaMedium";
+        src: url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+         url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");    
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Light";
+         src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+         url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");   
+}
+         
+         
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 26px;
+    line-height: 32px;
+    font-family: "HelveticaNeueCyr-Light";
+    font-weight: 400; /* по умолчанию */
+}
+body {
+	
+	color: #929292;
+	/* font-family:""; */
+	
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;    
+    background-color: #191919;
+}
+/*--------------------------------*/
+
+
+.header {
+}
+.main {
+}
+.block {
+    
+}
+.link {
+}
+.button {
+}
+.window {
+}
+
+.text {
+    margin: 0px 0px 30px 0px;
+    
+    
+}
+.text p {
+    margin: 0 0 0 30px;
+}
+
+.text p::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+	height: 20px;    
+    background: rgb(255, 0, 0) 0 0 / cover no-repeat;
+    border-radius: 50%;  
+    margin: 4px 10px 0px -30px;  
+}
+.text p:hover::before {      
+    background: rgb(0, 255, 13) 0 0 / cover no-repeat;       
+}
+
+.content {
+}
+.title {
+}
+.list {
+}
+.num-list {
+}
+.item {
+}
+.item__title {
+}
+.item__text {
+}
+.item__link {
+}
+.footer {
+}
+
+/*----------------------------------*/
+
+.block2 {
+}
+.block2__container {
+    width: 1160px;
+    margin: 0px auto;
+}
+.element__list {
+    display: inline-block;
+    font-size: 0;
+    margin: 30px 0;  
+    
+}
+.element {
+    display: inline-block;
+    background-color: #252525;
+    margin: 0px 20px 0px 0px;
+    border-radius: 8px;
+    padding: 24px 24px 50px 24px;
+    width: 24%;
+    min-height: 260px;
+    
+}
+.element__header {
+    font-family: "HelveticaMedium";
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+.element__text {
+    font-size: 18px;
+    line-height: 24px;    
+}
+.element:hover {
+    background-color: #34C759;
+    color: #000;
+}
+.element__header::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #34C759;
+    margin: 20px 0px 50px;
+}
+.block3 {
+    background-color: #CDCDCD;
+    padding: 90px 0 0 0;
+}
+.container3{
+    width: 1100px;
+    margin: 0 auto;
+}
+.cookie {
+    color: #5D62B5;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0 0 33px 0;
+}
+.list__item3 {
+    display: inline-block;    
+    margin-bottom: 120px;
+}
+.item {
+    display: inline-block;
+    width: 30%;
+}
+.item2 {
+    display: inline-block;
+    width: 30%;
+}
+.item3 {
+    display: inline-block;
+    width: 30%;
+}
+.item__title3,
+.item__title32,
+.item__title33 {
+    color: #F2726F;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+}
+.item__text3 {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B4B4B;
+    margin: 0 0 0 86px;
+}
+h1 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin: 0 0 70px 0;
+}
+.cookie::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #CDCDCD url("../img/Overlinemark.png") 50% 0 / cover  no-repeat;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+}
+.item__title3::before,
+.item__title32::before,
+.item__title33::before {
+    content: "";
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+    margin: 0 23px 0 0;
+    vertical-align: top;
+}
+.item__title3::before {    
+    background: #CDCDCD url("../img/dog_love_24x.png") 50% 0 / cover  no-repeat;
+}
+.item__title32::before {
+    background: #CDCDCD url("../img/dog_stream_24x.png") 50% 0 / cover  no-repeat;    
+}
+.item__title33::before {    
+    background: #CDCDCD url("../img/dog_vet_24x.png") 50% 0 / cover  no-repeat;    
+}
+
+
+
+
