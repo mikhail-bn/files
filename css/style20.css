@@ -14,10 +14,7 @@
     font-family: "HelveticaNeueCyr-Light";
          src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
          url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");   
-}
-         
-         
-
+}       
 *,
 *::before,
 *::after {
@@ -70,31 +67,12 @@ body {
     background-color: #191919;
 }
 /*--------------------------------*/
-
-
-.header {
-}
-.main {
-}
-.block {
-    
-}
-.link {
-}
-.button {
-}
-.window {
-}
-
 .text {
-    margin: 0px 0px 30px 0px;
-    
-    
+    margin: 0px 0px 30px 0px;   
 }
 .text p {
     margin: 0 0 0 30px;
 }
-
 .text p::before {
     content: "";
     display: inline-block;
@@ -107,30 +85,8 @@ body {
 .text p:hover::before {      
     background: rgb(0, 255, 13) 0 0 / cover no-repeat;       
 }
-
-.content {
-}
-.title {
-}
-.list {
-}
-.num-list {
-}
-.item {
-}
-.item__title {
-}
-.item__text {
-}
-.item__link {
-}
-.footer {
-}
-
 /*----------------------------------*/
 
-.block2 {
-}
 .block2__container {
     width: 1160px;
     margin: 0px auto;
@@ -195,18 +151,14 @@ body {
     display: inline-block;    
     margin-bottom: 120px;
 }
-.item {
-    display: inline-block;
-    width: 30%;
-}
-.item2 {
-    display: inline-block;
-    width: 30%;
-}
+.item,
+.item2,
 .item3 {
     display: inline-block;
     width: 30%;
+    margin: 0 23px 0 0;
 }
+
 .item__title3,
 .item__title32,
 .item__title33 {
