@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 20px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	color: rgb(226, 225, 252);
+	font-family: "Roboto"; 	
+}
+.wrapper {
+	min-height: 100%;
+	/*overflow: hidden;*/
+}
+
+
+
+
+.block {
+    padding: 30px;    
+}
+.block__item {
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    height: 100px;
+}
+.block__item_brown {
+    background: rgb(110, 89, 61);
+    position: absolute;
+}
+    
+    /*top: 100px;
+    left: 100px;*/
+
+.block__item_purple {
+    background: rgb(138, 86, 151);
+    /*position: absolute;
+    top: 0px;
+    left: 0px; */   
+}
+.block__item_green {
+    background: rgb(110, 134, 94);
+    
+}
+.block__item_brown span {
+    background: rgb(125, 180, 182);
+    left: -50px;
+}
+.block__item_blue {
+    background: rgb(102, 102, 255);
+    
+}
+.block__item_red {
+    background: rgb(250, 107, 107);    
+    position: absolute;   
+}
+.block__item_yellow {
+    background: rgb(209, 245, 151);
+    color: #000;
+    position: sticky;
+    top: 0px;
+}
+
+

@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 20px; /* по умолчанию */
+}
+body {
+    
+	line-height: 1;
+	font-family: "Roboto"; 	    
+}
+.wrapper {
+    min-height: 100%;
+    padding: 80px;
+}
+.block {
+    background-color: rgba(173, 173, 173, 0.562);    
+    height: 200px;
+    width: 200px;
+    
+}
+.block__item {
+    background-color: rgb(81, 211, 120);
+    width: 200px;
+    height: 200px;
+     
+    /*transform: translate(-50%, 0%);*/
+    transform: rotate(15deg);
+  
+
+  /*  position: relative;
+    top: 5%;
+    left: 5%;*/
+}
+.block__item_margin {
+    margin-top: 40px;
+}
+/*[class*="__container"] {
+    width: 800px;
+    margin: 0px auto;
+}*/
+.block2 {
+    background-color: rgba(173, 173, 173, 0.562);    
+    height: 200px;
+    width: 200px;
+    
+}
+
+.block2__item {
+    background-color: rgb(81, 211, 120);
+    width: 200px;
+    height: 200px;
+     
+    /*transform: translate(-50%, 0%);*/
+    transform: rotateY(50deg);
+    transition: all 0.8s ease 0s;
+}
+.block2:hover .block2__item{
+    transform: rotateY(0deg);
+}
+.block3 {
+    background-color: rgba(173, 173, 173, 0.562);    
+    height: 200px;
+    width: 200px;    
+}
+
+.block3__item {
+    background-color: rgb(81, 211, 120);
+    width: 200px;
+    height: 200px;
+     
+    /*transform: translate(-50%, 0%);*/
+    transform: skew(-10deg);
+    transition: all 0.99s ease 0s;
+}
+.block3:hover .block3__item{
+    transform: skew(0deg);
+}
+.block4 {
+    background-color: rgba(173, 173, 173, 0.562);    
+    height: 200px;
+    width: 200px;    
+}
+.block4__item {
+    background-color: rgb(81, 211, 120);
+    width: 200px;
+    height: 200px;
+     
+    /*transform: translate(-50%, 0%);*/
+    transform: rotate(15deg);
+    transform-origin: top left;
+    transition: all 0.8s ease 0s;
+}
+.block4:hover .block4__item {
+    transform: rotate(0deg);
+}
+.block5 {
+    background-color: rgba(173, 173, 173, 0.562);    
+    height: 200px;
+    width: 200px;    
+    perspective: 600px;
+    
+}
+.block5__item {
+    background-color: rgb(81, 211, 120);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;     
+    transform: rotateX(45deg);    
+    transition: all 0.8s ease 0s;
+}
+.block5:hover .block5__item {
+    transform: rotate(0deg);
+}
