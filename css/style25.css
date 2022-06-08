@@ -1,0 +1,383 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 20px; /* по умолчанию */
+}
+body {    
+	line-height: 1;
+	font-family: "Roboto"; 	    
+}
+.wrapper {    
+    min-height: 100%;    
+}
+
+.auto__container {    
+    min-width: 1300px;
+    margin: 0 auto;
+    position: relative;  
+}
+.machine-body__front {
+    display: inline-block;
+    background: url(../img/CAR/front-wing.png);
+    position: absolute;
+    left: 33px;
+    top: 159px;
+    width: 324px;
+    height: 207px;
+    z-index: 2;
+}
+.machine-body__door {
+    display: inline-block;
+    background: url(../img/CAR/Doors.png);
+    position: absolute;
+    left: 357px;
+    top: 159px;
+    width: 655px;
+    height: 207px;
+    z-index: 2;
+}
+.machine-body__back {
+    display: inline-block;
+    background: url(../img/CAR/Back.png);
+    position: absolute;
+    left: 1012px;
+    top: 102px;
+    width: 188px;
+    height: 264px;
+    z-index: 2;
+}
+.machine-body__hight {
+    display: inline-block;
+    background: url(../img/CAR/hight.png);
+    position: absolute;
+    left: 357px;
+    top: 51px;
+    width: 655px;
+    height: 109px;
+    z-index: 2;
+}
+.puddle {
+    display: inline-block;
+    background: url(../img/CAR/puddle.png);
+    position: absolute;
+    left: 10px;
+    top: 369px;
+    width: 1228px;
+    height: 40px;
+    z-index: 1;
+}
+
+.shadows-bliks__door {
+    display: inline-block;
+    background: url(../img/CAR/door-blik.png);
+    position: absolute;
+    left: 368px;
+    top: 240px;
+    width: 469px;
+    height: 96px;
+    z-index: 3;
+}
+.shadows-bliks__frist-door {
+    display: inline-block;
+    background: url(../img/CAR/first-door-shadow.png);
+    position: absolute;
+    left: 322px;
+    top: 202px;
+    width: 253px;
+    height: 16px;
+    z-index: 3;
+}
+.shadows-bliks__second-door {
+    display: inline-block;
+    background: url(../img/CAR/second-door-shadow.png);
+    position: absolute;
+    left: 660px;
+    top: 183px;
+    width: 174px;
+    height: 11px;
+    z-index: 3;
+}
+.shadows-bliks__door-blik {
+    display: inline-block;
+    background: url(../img/CAR/Door-blik-light.png);
+    position: absolute;
+    left: 402px;
+    top: 230px;
+    width: 301px;
+    height: 35px;
+    z-index: 3;
+}
+.shadows-bliks__back-blik {
+    display: inline-block;
+    background: url(../img/CAR/back-blik.png);
+    position: absolute;
+    left: 924px;
+    top: 104px;
+    width: 228px;
+    height: 55px;
+    z-index: 3;
+}
+.shadows-bliks__front-light {
+    display: inline-block;
+    background: url(../img/CAR/front-light.png);
+    position: absolute;
+    left: 51px;
+    top: 205px;
+    width: 122px;
+    height: 51px;
+    z-index: 3;
+}
+.shadows-bliks__back-light {
+    display: inline-block;
+    background: url(../img/CAR/front-light.png);
+    position: absolute;
+    left: 51px;
+    top: 205px;
+    width: 122px;
+    height: 51px;
+    z-index: 3;
+}
+
+.shadows-bliks__front-light {
+    display: inline-block;
+    background: url(../img/CAR/Back-light.png);
+    position: absolute;
+    left: 1070px;
+    top: 168px;
+    width: 109px;
+    height: 35px;
+    z-index: 3;
+}
+
+.shadows-bliks__back-divider {
+    display: inline-block;
+    background: url(../img/CAR/back-light-devider.png);
+    position: absolute;
+    left: 1070px;
+    top: 175px;
+    width: 79px;
+    height: 13px;
+    z-index: 4;
+}
+.shadows-bliks__front-divider {
+    display: inline-block;
+    background: url(../img/CAR/light-divider.png);
+    position: absolute;
+    left: 53px;
+    top: 217px;
+    width: 74px;
+    height: 33px;
+    z-index: 4;
+}
+.shadows-bliks__front-radiator {
+    display: inline-block;
+    background: url(../img/CAR/first-front-bumper.png);
+    position: absolute;
+    left: 42px;
+    top: 261px;
+    width: 53px;
+    height: 76px;
+    z-index: 3;
+}
+.shadows-bliks__back-radiator {
+    display: inline-block;
+    background: url(../img/CAR/front-bamper.png);
+    position: absolute;
+    left: 42px;
+    top: 252px;
+    width: 98px;
+    height: 90px;
+    z-index: 4;
+}
+.car-wheel {
+}
+.car-wheel__tire-second {
+    display: inline-block;
+    background: url(../img/CAR/first-tire.png);
+    position: absolute;
+    transform-origin: left bottom;   
+    left: 165px;
+    top: 240px;
+    width: 163px;
+    height: 163px;
+    z-index: 5;
+}
+.car-wheel__tire {
+    display: inline-block;
+    background: url(../img/CAR/first-tire.png);
+    position: absolute;
+    left: 868px;
+    top: 240px;
+    width: 163px;
+    height: 163px;
+    z-index: 5;
+}
+.glass__back {
+    display: inline-block;
+    background: url(../img/CAR/Back-glass.png);
+    position: absolute;
+    left: 922px;
+    top: 71px;
+    width: 158px;
+    height: 59px;
+    z-index: 5;
+}
+.front__shadow {
+    display: inline-block;
+    background: url(../img/CAR/front-shadow.png);
+    position: absolute;
+    left: 365px;
+    top: 63px;
+    width: 339px;
+    height: 103px;
+    z-index: 5;
+}
+.hood__blik {
+    display: inline-block;
+    background: url(../img/CAR/hood-blik.png);
+    position: absolute;
+    left: 147px;
+    top: 162px;
+    width: 251px;
+    height: 31px;
+    z-index: 5;
+}
+.roof__blik {
+    display: inline-block;
+    background: url(../img/CAR/roof-blik.png);
+    position: absolute;
+    left: 530px;
+    top: 52px;
+    width: 152px;
+    height: 19px;
+    z-index: 5;
+}
+.under-glass_blik {
+    display: inline-block;
+    background: url(../img/CAR/under-glass-blik.png);
+    position: absolute;
+    left: 459px;
+    top: 157px;
+    width: 421px;
+    height: 27px;
+    z-index: 5;
+}
+.glass-rim {
+    display: inline-block;
+    background: url(../img/CAR/glass-border.png);
+    position: absolute;
+    left: 372px;
+    top: 62px;
+    width: 555px;
+    height: 113px;
+    z-index: 6;
+}
+.glass__corner {
+    display: inline-block;
+    background: url(../img/CAR/corner.png);
+    position: absolute;
+    left: 384px;
+    top: 142px;
+    width: 36px;
+    height: 26px;
+    z-index: 8;
+}
+
+.glass__first {
+    display: inline-block;
+    background: url(../img/CAR/first-glass.png);
+    position: absolute;
+    left: 425px;
+    top: 68px;
+    width: 238px;
+    height: 104px;
+    z-index: 7;
+}
+.glass__second {
+    display: inline-block;
+    background: url(../img/CAR/second-glass.png);
+    position: absolute;
+    left: 685px;
+    top: 66px;
+    width: 157px;
+    height: 92px;
+    z-index: 7;
+}
+.glass__third {
+    display: inline-block;
+    background: url(../img/CAR/third-glass.png);
+    position: absolute;
+    left: 842px;
+    top: 83px;
+    width: 62px;
+    height: 68px;
+    z-index: 7;
+}
+.corner__back {
+    display: inline-block;
+    background: url(../img/CAR/glass-shadow.png);
+    position: absolute;
+    left: 895px;
+    top: 110px;
+    width: 17px;
+    height: 26px;
+    z-index: 7;
+}
+.central__rim {
+    display: inline-block;
+    background: url(../img/CAR/glass-rack-second.png);
+    position: absolute;
+    left: 838px;
+    top: 80px;
+    width: 10px;
+    height: 72px;
+    z-index: 8;
+}
+.central__rim-wide {
+    display: inline-block;
+    background: url(../img/CAR/glass-rack.png);
+    position: absolute;
+    left: 642px;
+    top: 66px;
+    width: 52px;
+    height: 96px;
+    z-index: 8;
+
+}
+
+
+
+
+
