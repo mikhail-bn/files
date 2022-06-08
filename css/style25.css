@@ -221,8 +221,7 @@ body {
     height: 90px;
     z-index: 4;
 }
-.car-wheel {
-}
+
 .car-wheel__tire-second {
     display: inline-block;
     background: url(../img/CAR/first-tire.png);
@@ -242,7 +241,7 @@ body {
     top: 240px;
     width: 163px;
     height: 163px;
-    z-index: 5;
+    z-index: 6;
 }
 .glass__back {
     display: inline-block;
@@ -374,8 +373,143 @@ body {
     width: 52px;
     height: 96px;
     z-index: 8;
-
 }
+.glass__first-blik {
+    display: inline-block;
+    background: url(../img/CAR/first-glass-blik.png);
+    position: absolute;
+    left: 442px;
+    top: 125px;
+    width: 42px;
+    height: 47px;
+    z-index: 8;
+}
+.glass__first {
+    display: inline-block;
+    background: url(../img/CAR/first-glass.png);
+    position: absolute;
+    left: 425px;
+    top: 68px;
+    width: 238px;
+    height: 104px;
+    z-index: 8;
+}
+.glass__second {
+    display: inline-block;
+    background: url(../img/CAR/second-glass.png);
+    position: absolute;
+    left: 686px;
+    top: 67px;
+    width: 157px;
+    height: 92px;
+    z-index: 8;
+}
+.glass__third {
+    display: inline-block;
+    background: url(../img/CAR/third-glass.png);
+    position: absolute;
+    left: 842px;
+    top: 84px;
+    width: 62px;
+    height: 68px;
+    z-index: 8;
+}
+.glass__second-blik {
+    display: inline-block;
+    background: url(../img/CAR/second-glass-blik.png);
+    position: absolute;
+    left: 461px;
+    top: 116px;
+    width: 43px;
+    height: 55px;
+    z-index: 8;
+}
+.glass__third-blik {
+    display: inline-block;
+    background: url(../img/CAR/path94third-glass-blik.png);
+    position: absolute;
+    left: 510px;
+    top: 90px;
+    width: 66px;
+    height: 76px;
+    z-index: 8;
+}
+.glass__fourth-blik {
+    display: inline-block;
+    background: url(../img/CAR/fourth-glass-blik.png);
+    position: absolute;
+    left: 536px;
+    top: 84px;
+    width: 63px;
+    height: 81px;
+    z-index: 8;
+}
+.glass__fifth-blik {
+    display: inline-block;
+    background: url(../img/CAR/fifth-glass-blik.png);
+    position: absolute;
+    left: 693px;
+    top: 66px;
+    width: 76px;
+    height: 90px;
+    z-index: 8;
+}
+.glass__sixth-blik {
+    display: inline-block;
+    background: url(../img/CAR/sixth-glass-blik.png);
+    position: absolute;
+    left: 773px;
+    top: 70px;
+    width: 64px;
+    height: 83px;
+    z-index: 8;
+}
+.front__rim {
+    display: inline-block;
+    background: url(../img/CAR/front-rim.png);
+    position: absolute;
+    left: 63px;
+    top: 212px;
+    width: 290px;
+    height: 154px;
+    z-index: 4;
+}
+.back__rim {
+    display: inline-block;
+    background: url(../img/CAR/back-rim.png);
+    position: absolute;
+    left: 343px;
+    top: 211px;
+    width: 713px;
+    height: 150px;
+    z-index: 4; 
+}
+.front__corner {
+    display: inline-block;
+    background: url(../img/CAR/front-down-rim.png);
+    position: absolute;
+    left: 71px;
+    top: 336px;
+    width: 76px;
+    height: 21px;
+    z-index: 4;
+}
+.back__middle-rim {
+}
+.wheel__left-back {
+}
+.wheel__right-back {
+    display: inline-block;
+    background: url(../img/CAR/second-wheel-back.png);
+    position: absolute;
+    left: 849px;
+    top: 226px;
+    width: 198px;
+    height: 127px;
+    z-index: 5;
+}
+
+
 
 
 
