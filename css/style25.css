@@ -40,13 +40,30 @@ body {
 	font-family: "Roboto"; 	    
 }
 .wrapper {    
-    min-height: 100%;    
+    min-height: 100%; 
+    background: url(../img/road.png) 50% 100% / cover no-repeat;   
+    overflow: hidden;
 }
 
 .auto__container {    
-    min-width: 1300px;
-    margin: 0 auto;
-    position: relative;  
+    min-width: 1500px;
+    position: relative; 
+    animation-name: moove;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; 
+    animation-delay: 2s;
+}
+
+.auto__container:hover {
+    animation-play-state: paused;
+}
+.auto__container:hover .car-wheel__first {
+    animation-play-state: paused;
+}
+.auto__container:hover .car-wheel__second {
+    animation-play-state: paused;
 }
 .machine-body__front {
     display: inline-block;
@@ -91,16 +108,6 @@ body {
     width: 655px;
     height: 108px;
     z-index: 2;
-}
-.puddle {
-    display: inline-block;
-    background: url(../img/CAR/puddle.png);
-    position: absolute;
-    left: 10px;
-    top: 369px;
-    width: 1228px;
-    height: 40px;
-    z-index: 1;
 }
 
 .shadows-bliks__door {
@@ -226,27 +233,8 @@ body {
     z-index: 4;
 }
 
-.car-wheel__tire-second {
-    display: inline-block;
-    background: url(../img/CAR/first-tire.png);
-    position: absolute;
-    transform-origin: left bottom;   
-    left: 165px;
-    top: 240px;
-    width: 163px;
-    height: 163px;
-    z-index: 5;
-}
-.car-wheel__tire {
-    display: inline-block;
-    background: url(../img/CAR/first-tire.png);
-    position: absolute;
-    left: 868px;
-    top: 240px;
-    width: 163px;
-    height: 163px;
-    z-index: 6;
-}
+
+
 .glass__back {
     display: inline-block;
     background: url(../img/CAR/Back-glass.png);
@@ -301,9 +289,9 @@ body {
     display: inline-block;
     background: url(../img/CAR/glass-border.png);
     position: absolute;
-    left: 372px;
-    top: 62px;
-    width: 547px;
+    left: 350px;
+    top: 61px;
+    width: 582px;
     height: 113px;
     z-index: 6;
 }
@@ -326,8 +314,29 @@ body {
     top: 68px;
     width: 238px;
     height: 104px;
-    z-index: 7;
+    z-index: 1;
 }
+
+.mister-bin {
+    display: inline-block;
+    background: url(../img/CAR/bin.png);
+    position: absolute;
+    left: 425px;
+    top: 68px;
+    width: 238px;
+    height: 104px;
+    z-index: 0;
+}
+.auto__container:hover .glass__first {
+    animation-name: glass-down;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
 .glass__second {
     display: inline-block;
     background: url(../img/CAR/second-glass.png);
@@ -378,76 +387,7 @@ body {
     height: 96px;
     z-index: 8;
 }
-.glass__first-blik {
-    display: inline-block;
-    background: url(../img/CAR/first-glass-blik.png);
-    position: absolute;
-    left: 442px;
-    top: 125px;
-    width: 42px;
-    height: 47px;
-    z-index: 8;
-}
-.glass__first {
-    display: inline-block;
-    background: url(../img/CAR/first-glass.png);
-    position: absolute;
-    left: 425px;
-    top: 68px;
-    width: 238px;
-    height: 104px;
-    z-index: 8;
-}
-.glass__second {
-    display: inline-block;
-    background: url(../img/CAR/second-glass.png);
-    position: absolute;
-    left: 686px;
-    top: 67px;
-    width: 157px;
-    height: 92px;
-    z-index: 8;
-}
-.glass__third {
-    display: inline-block;
-    background: url(../img/CAR/third-glass.png);
-    position: absolute;
-    left: 842px;
-    top: 84px;
-    width: 62px;
-    height: 68px;
-    z-index: 8;
-}
-.glass__second-blik {
-    display: inline-block;
-    background: url(../img/CAR/second-glass-blik.png);
-    position: absolute;
-    left: 461px;
-    top: 116px;
-    width: 43px;
-    height: 55px;
-    z-index: 8;
-}
-.glass__third-blik {
-    display: inline-block;
-    background: url(../img/CAR/path94third-glass-blik.png);
-    position: absolute;
-    left: 510px;
-    top: 90px;
-    width: 66px;
-    height: 76px;
-    z-index: 8;
-}
-.glass__fourth-blik {
-    display: inline-block;
-    background: url(../img/CAR/fourth-glass-blik.png);
-    position: absolute;
-    left: 536px;
-    top: 84px;
-    width: 63px;
-    height: 81px;
-    z-index: 8;
-}
+
 .glass__fifth-blik {
     display: inline-block;
     background: url(../img/CAR/fifth-glass-blik.png);
@@ -539,46 +479,79 @@ body {
     height: 127px;
     z-index: 5;
 }
-.wheel-disc__front {
+.car-wheel__first {
     display: inline-block;
-    background: url(../img/CAR/first-disk.png);
+    background: url(../img/CAR/wheel.png);
     position: absolute;
-    left: 890px;
-    top: 262px;
-    width: 120px;
-    height: 120px;
+    left: 165px;
+    top: 241px;
+    width: 162px;
+    height: 162px;
     z-index: 7;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
-.wheel-disc__back {
+.car-wheel__second {
     display: inline-block;
-    background: url(../img/CAR/first-disk.png);
+    background: url(../img/CAR/wheel.png);
     position: absolute;
-    left: 187px;
-    top: 262px;
-    width: 120px;
-    height: 120px;
+    left: 868px;
+    top: 241px;
+    width: 162px;
+    height: 162px;
     z-index: 7;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+
 }
-.wheel-disc__inner-front {
-    display: inline-block;
-    background: url(../img/CAR/innner-wheel.png);
-    position: absolute;
-    left: 197px;
-    top: 270px;
-    width: 104px;
-    height: 104px;
-    z-index: 7;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+@keyframes moove {
+    0% {
+        transform: translate(-1300px, 350px);
+    }
+    
+    100% {
+        transform: translate(1300px, 350px);
+    }
+  }
+@keyframes glass-down {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    100% {
+        transform: translateY(110px);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+.car-wheel {
+
 }
-.wheel-disc__inner-back {
-    display: inline-block;
-    background: url(../img/CAR/innner-wheel.png);
-    position: absolute;
-    left: 899px;
-    top: 270px;
-    width: 104px;
-    height: 104px;
-    z-index: 7;
-}
+
+
 .mirror__handle {
     display: inline-block;
     background: url(../img/CAR/mirror-handle.png);

@@ -150,7 +150,7 @@ body {
 .menu__item:nth-child(5) {
     transition-delay: 1.1s;
 }
-/*---------------------------*/
+/*------------animation------------*/
 .block {
     width: 150px;
     height: 150px;
@@ -191,6 +191,7 @@ body {
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: infinite;
+  
   
 }
 @keyframes somename-r {
