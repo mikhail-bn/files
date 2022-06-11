@@ -329,11 +329,11 @@ body {
 }
 .auto__container:hover .glass__first {
     animation-name: glass-down;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-direction: normal; 
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -522,11 +522,11 @@ body {
   }
 @keyframes moove {
     0% {
-        transform: translate(-1300px, 350px);
+        transform: translate(-1300px, 310px);
     }
     
     100% {
-        transform: translate(1300px, 350px);
+        transform: translate(1300px, 310px);
     }
   }
 @keyframes glass-down {
