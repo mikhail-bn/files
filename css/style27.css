@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 20px; /* по умолчанию */
+}
+body {    
+	line-height: 1;
+	font-family: "Roboto"; 	    
+}
+.wrapper {    
+    min-height: 100%; 
+    padding: 30px;    
+}
+.block {
+    border: 10px solid sienna;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: row;
+    /*row-gap: 50px; column-gap: 10px;
+    gap: 50px 10px;*/
+    
+    
+    
+}
+.block__element {
+    border: 10px solid rgb(99, 165, 97);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    /*flex-grow: 1;
+    flex-shrink: 0;*/
+    flex: 1 1 33.333%;
+}
+
+/*.block__element_align {
+    align-self: center;
+
+}*/
