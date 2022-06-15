@@ -46,7 +46,8 @@ html {
 body {    
 	line-height: 1;
     color: #4B4B4B;
-    font-family: "Roboto";  
+    font-family: "Roboto";
+    background-color: #F5F5F5;  
 		    
 }
 .wrapper {    
@@ -124,7 +125,7 @@ body {
 .item-promise__title:not(:last-child) {
     margin: 0px 0px 20px 0px;
 }
-.item-promise__title {
+.item-title {
     font-size: 19px;
     font-weight: 900;
     color: #F2726F;
@@ -139,31 +140,64 @@ body {
 .services {
     padding: 100px 0px 112px 0px;
  }
+ .servises__header {
+    margin: 0px 0px 74px 0px;
+ }
 .services__items {
     display: flex;
+    row-gap: 24px;
+    flex-wrap: wrap;
+    margin: 0px -12px;
+}
+.services__items:not(:last-child) {
+    margin: 0px 0px 66px 0px;
 }
 .services__item {
     flex: 1 1 33.333%;
+    padding: 0px 12px;
+    min-width: 300px;
 }
 .item-services {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px 44px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.item-services:hover {
+    box-shadow: 0px 15px 24px #26262620;
+    box-shadow: 0px 8px 16px #26262624;
+}
+.item-services__icon:not(:last-child) {
+    margin: 0px 0px 33px 0px;    
 }
 .item-services__icon {
+    flex: 0 0 63px;
+    width: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-.item-services__title {
-    color: #F2726F;
-    font-size: 19px;
-    font-weight: 900;
-    text-transform: capitalize;
-    line-height: 1.368;
-    text-align: center;
+.item-services__icon img {
+    max-width: 100%;
+    max-height: 63px;
 }
 .item-services__text {
 }
-
-
+.services__container {
+    display: flex;
+    flex-direction: column;
+    
+}
 .services__button {
-    padding: 15px;
-    border-radius: 9px;
+    align-self: center;
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 8px;
     background: #F2726F;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -171,8 +205,13 @@ body {
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.15px;
-    box-shadow: 0px 4px 4px;
+    
+    
 }
+.services__button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.247);
+}
+
 
 
 
