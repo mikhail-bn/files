@@ -148,6 +148,9 @@ body {
 }
 .services {
     padding: 100px 0px 112px 0px;
+    background: url(../img/Blob21.png) right -490px no-repeat;
+    overflow: hidden;
+    transform: translate();
  }
  .servises__header {
     margin: 0px 0px 74px 0px;
@@ -227,36 +230,37 @@ body {
 }
 .impact {
     background-color: #2AB1AD;
-    padding: 20px 0px 212px 0px;
+    padding: 0px 0px 212px 0px;
     position: relative;
 }
 .impact__container {
-    position: relative;
-    
+    position: relative;    
 }
-.impact::before {
+.impact__container::before {
     content: "";
     position: absolute;
+    display: block;
     top: 0px;
     right: 50%;
     transform: translate(88%, 0px);
-    width: 695px;
-    height: 308px;
-    background: url(../img/Blob2.png) 0 0 no-repeat;
+    width: 68%;
+    height: 100%;
+    background: url(../img/Blob2.png) 0 0 / 100% no-repeat;
 }
 .impact__body {
     display: flex;
     margin: 0px -15px;
-    justify-content: space-between;
-
+    position: relative;
 }
 .impact__body:not(:last-child) {
     margin-bottom: 80px;
-    align-items: flex-end;
+    
 }
 .impact__content {
+    align-self: flex-end;
     flex: 0 0 50%;
-    padding: 0px 15px;
+    padding: 20px 15px 0px 15px;
+
 }
 .impact__header {
     max-width: 420px;
@@ -274,7 +278,7 @@ body {
 .header-title__item_white {
 }
 .impact__image {
-    margin: -100px 0px 0px 0px;
+    margin: -7.62% 0px 0px 0px;
     flex: 0 0 50%;
     padding: 0px 15px;
 }
@@ -282,8 +286,65 @@ body {
     max-width: 100%;
     border-radius: 40px;
 }
-.impact__items {
+.impact__body {
 }
+.impact__content {
+}
+.impact__header {
+}
+.header-title {
+}
+.header-title_white {
+}
+.header-title__lable {
+}
+.header-title__lable_white {
+}
+.header-title__item {
+}
+.header-title__item_white {
+}
+.impact__image {
+}
+.impact__items {
+    margin: 0px -12px;
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 24px;
+    align-items: flex-start;   
+}
+.impact__item {
+    padding: 0px 12px;
+    flex: 0 1 25%;    
+}
+.item-impact {
+    display: flex; 
+    column-gap: 11px;
+    align-items: flex-start;    
+}
+.item-impact__icon {
+    flex: 0 0 76px;
+}
+.item-impact__body {
+    align-self: center;
+}
+.item-impact__value {
+    color: #fff;
+    font-size: 36px;
+    line-height: 1.166;
+    font-weight: 900;
+}
+.item-impact__value:not(:last-child) {
+    margin: 0px 0px 3px 0px;
+}
+.item-impact__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.15;
+    color: #5D62B5;
+}
+
 
 
 
