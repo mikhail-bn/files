@@ -83,6 +83,8 @@ body {
 .header-title *:not(:last-child) {
     margin: 0px 0px 33px 0px;
 }
+
+
 .header-title__lable {
     background: url(../img/Overline-Mark.svg) 0px -2px no-repeat;
     color: #5D62B5;
@@ -93,11 +95,18 @@ body {
     line-height: 2;
     padding: 0px 0px 0px 35px;
 }
-.heade-title__item {
+.header-title__lable_white {
+    color: #fff;
+    background: url(../img/Overline-Mark-w.svg) 0px -2px no-repeat;
+}
+.header-title__item {
     font-weight: 900;
     font-size: 36px;
     color: #000;
     line-height: 1.16;
+}
+.header-title__item_white {
+    color: #fff;
 }
 .promise__items {
     display: flex;
@@ -186,8 +195,6 @@ body {
     max-width: 100%;
     max-height: 63px;
 }
-.item-services__text {
-}
 .services__container {
     display: flex;
     flex-direction: column;
@@ -204,14 +211,79 @@ body {
     font-size: 12px;
     line-height: 2;
     font-weight: 700;
-    letter-spacing: 0.15px;
-    
-    
+    letter-spacing: 0.15px;    
 }
 .services__button:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.247);
 }
+.item-service__link {
+    color: #F2726F;
+}
+.item-services__text:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+}
+.item-services__text {
+    flex: 1 1 auto;
+}
+.impact {
+    background-color: #2AB1AD;
+    padding: 20px 0px 212px 0px;
+    position: relative;
+}
+.impact__container {
+    position: relative;
+    
+}
+.impact::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    transform: translate(88%, 0px);
+    width: 695px;
+    height: 308px;
+    background: url(../img/Blob2.png) 0 0 no-repeat;
+}
+.impact__body {
+    display: flex;
+    margin: 0px -15px;
+    justify-content: space-between;
 
+}
+.impact__body:not(:last-child) {
+    margin-bottom: 80px;
+    align-items: flex-end;
+}
+.impact__content {
+    flex: 0 0 50%;
+    padding: 0px 15px;
+}
+.impact__header {
+    max-width: 420px;
+}
+.header-title {
+}
+.header-title_white {
+}
+.header-title__lable {
+}
+.header-title__lable_white {
+}
+.header-title__item {
+}
+.header-title__item_white {
+}
+.impact__image {
+    margin: -100px 0px 0px 0px;
+    flex: 0 0 50%;
+    padding: 0px 15px;
+}
+.impact__image img {
+    max-width: 100%;
+    border-radius: 40px;
+}
+.impact__items {
+}
 
 
 
