@@ -1,0 +1,88 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap);
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;  
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {    
+	line-height: 1;	
+    background: rgb(248, 169, 169);	    
+}
+.wrapper {    
+    min-height: 100%; 
+    padding: 20px;  
+}
+[class*="__container"] {
+max-width: 1020px;
+box-sizing: content-box;
+margin: 0 auto;
+padding: 0px 15px;
+}
+.header {
+}
+.main {
+    margin: 0px 0px 100px 0px;
+}
+.main__form {
+}
+.form {
+}
+.form__line {
+    
+   
+}
+.form__line:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+   
+}
+.form__lable {
+    display: block;
+    margin: 0px 0px 20px 0px;
+}
+.form__input {
+    height: 30px;
+    padding:  0 10px;
+    width: 100%;
+}
+.form__button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

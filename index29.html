@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="css/style29.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <form action="#">
+                <label for="01">ПИШИ!</label>
+                <br>
+                <input tabindex="2" id="01" required placeholder="Пиши тут чё нить..." maxlength="128" name="username" value="" type="text">
+
+                <input tabindex="5" autocomplete="off" required placeholder="Пиши нумеры какии нить..." maxlength="128" name="number" value="" type="number">
+
+                <input tabindex="3" autocomplete="off" required placeholder="Пиши мыло какое нить..." maxlength="128" name="email" value="" type="email">
+
+                <input tabindex="6" autocomplete="off" disabled required placeholder="Пиши день" maxlength="128" name="date" value="" type="date">
+                <br>
+
+                <div><input tabindex="1" autocomplete="off"  required placeholder="Пиши день" maxlength="128" name="date" value="" type="checkbox"> Есть чё нить?</div>
+                <br>
+
+                <div><input tabindex="4" autocomplete="off" required placeholder="Пиши день" maxlength="128" name="date" value="" type="radio">ЖО</div>
+                <br>
+
+                <div><input tabindex="9" autocomplete="off" required placeholder="Пиши день" maxlength="128" name="date" value="" type="radio"> МЭ</div>
+                <br>
+
+                <div><input tabindex="11" autocomplete="off" required  multiple accept=".jpg, .png" placeholder="" maxlength="128" name="file" value="" type="file"> </div>
+                <br>
+
+                <div><input tabindex="8" autocomplete="off" required  multiple accept=".jpg, .png" placeholder="Пороль" maxlength="128" name="password" value="" type="password"> </div>
+                <br>
+
+                <textarea tabindex="7" name="" rows="10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sunt eaque harum laboriosam amet rerum soluta facilis necessitatibus dolores molestiae sapiente praesentium tempore modi beatae, quos cumque quis ullam pariatur.
+                </textarea>
+
+                <div>
+                    <select tabindex="10" name="select" id="">
+                        <option value="1">Пунтк 1</option>
+                        <option value="2">Пунтк 2</option>
+                        <option selected value="3">Пунтк 3</option>
+                        <option value="4">Пунтк 4</option>
+                    </select>
+                </div>
+
+                <button type="submit">Жмак</button>
+
+            </form>
+
+            <br><br><br><br><br><br>
+
+            <form action="#" class="main__form form">
+                <div class="form__line">
+                    <label for="" class="form__lable">Введите имя</label>
+                    <input id="username" autocomplete="off" type="text" name="form[]" class="form__input" name="username">
+                </div>
+                <button type="submit" class="form__button">GO!</button>
+            </form>
+                
+
+        </main>
+        <footer class="footer"></footer>
+    </div>    
+</body>
+</html>
