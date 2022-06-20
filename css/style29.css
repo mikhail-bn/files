@@ -86,3 +86,91 @@ padding: 0px 15px;
     padding: 10px 15px;
     cursor: pointer;
 }
+.form__line {
+}
+
+
+
+
+.checkbox {
+    position: relative;
+}
+.checkbox__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer; 
+}
+.checkbox__input:focus + .checkbox__lable {
+    outline: 1px solid #fff;   
+}
+.checkbox__input:checked + .checkbox__lable::before  {
+    background-color: rgb(7, 190, 1); 
+    transform: rotate(-45deg);
+}
+.checkbox__lable {
+    display:  inline-flex;
+    column-gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+.checkbox__lable::before {
+    align-self: flex-start;
+    flex:  0 0 20px;
+    height: 20px;
+    content: "";
+    background-color: #fff;
+    border-radius: 5px;
+}
+.radiobuttons {
+    position: relative;
+}
+.radiobuttons__item {
+    position: relative;
+}
+.radiobuttons__item:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.radiobuttons__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.radiobuttons__input:focus + .radiobuttons__lable::before {
+    box-shadow: 0 0 10px rgb(119, 247, 60);
+}
+.radiobuttons__input:checked + .radiobuttons__lable::after {
+    transform: scale(1);    
+}
+.radiobuttons__lable {
+    display:  inline-flex;
+    column-gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+}
+.radiobuttons__lable::before {
+    align-self: flex-start;
+    flex:  0 0 20px;
+    height: 20px;
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+}
+.radiobuttons__lable::after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: rgb(255, 0, 0);
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+}
+
+
