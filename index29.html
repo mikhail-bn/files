@@ -14,11 +14,11 @@
             <form action="#">
                 <label for="01">ПИШИ!</label>
                 <br>
-                <input tabindex="2" id="01" required placeholder="Пиши тут чё нить..." maxlength="128" name="username" value="" type="text">
+                <input class="form__input_ph" tabindex="2" id="01" required placeholder="Пиши тут чё нить..." maxlength="128" name="username" value="" type="text">
 
-                <input tabindex="5" autocomplete="off" required placeholder="Пиши нумеры какии нить..." maxlength="128" name="number" value="" type="number">
+                <input class="form__input_ph" tabindex="5" autocomplete="off" required placeholder="Пиши нумеры какии нить..." maxlength="128" name="number" value="" type="number">
 
-                <input tabindex="3" autocomplete="off" required placeholder="Пиши мыло какое нить..." maxlength="128" name="email" value="" type="email">
+                <input class="form__input_ph" tabindex="3" autocomplete="off" required placeholder="Пиши мыло какое нить..." maxlength="128" name="email" value="" type="email">
 
                 <input tabindex="6" autocomplete="off" disabled required placeholder="Пиши день" maxlength="128" name="date" value="" type="date">
                 <br>
@@ -70,6 +70,18 @@
                     </div>
                 </div>
 
+
+
+                <div class="form__line">
+                    <div class="switcher">
+                         <input id="switcher" autocomplete="off" type="checkbox" name="switcher" class="switcher__input">
+                         <label for="switcher" class="switcher__lable"></label>
+                    </div>
+                </div>
+
+
+
+
                 <div class="form__line">
                     <div class="radiobuttons">
 
@@ -86,9 +98,30 @@
                     
                 </div>
 
+                <div class="form__line">
+                    <div class="file">
+                        <input id="file_1" type="file" class="file__input">
+                        <label for="file_1" class="file__lable">Вибрати файл</label>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <select name="form[]" class="form__select">
+                        <option value="1" selected>punkt_1</option>
+                        <option value="2">punkt_2</option>
+                        <option value="3">punkt_3</option>
+                        <option value="4">punkt_4</option>
+                    </select>
+                </div>
+                <div class="form__line">
+                    <textarea autocomplete="off" class="form__textarea" name="text"  cols="30" rows="10"></textarea>
+                </div>
+
+
+
 
                 <button type="submit" class="form__button">GO!</button>
             </form>
+            
                 
 
         </main>
