@@ -60,11 +60,11 @@ body {
 	padding: 130px 0px 210px 210px;
 }
 .forms {
-	width: 585px;
+	/*width: 585px;*/
 	background-color: #5D62B5;
 	border-radius: 40px;
 	padding: 76px 57px;
-	display: inline-flex;
+	/*display: inline-flex;*/
 	flex-direction: column;
 	box-shadow: 0px 3px 16px 0px #262626;
 	color: #fff;
@@ -83,20 +83,18 @@ body {
 	color: #fff;		
 }
 
-.form__block {
-	display: flex;
-	flex-wrap: wrap;	
-	margin: 0px -11px;
-	row-gap: 22px;
+.form__block {		
+	margin: 0px -11px;	
 }
 .block-form {
 	display: flex;
 	flex-wrap: wrap;
+	row-gap: 22px;
 }
 .block-form__item { 
 	padding: 0px 11px;
 	flex: 0 0 50%;
-	row-gap: 22px;	
+		
 }
 .form__item {
 	width: 100%;
@@ -126,6 +124,7 @@ body {
 	cursor: pointer;
 }
 .form__textarea {
+	flex: 1 1 100%;
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
