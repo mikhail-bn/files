@@ -1,0 +1,144 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+$main: green;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap);
+@import "_null";
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;  
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {    
+	line-height: 1;    
+	font-family: Roboto;
+    background-color: rgb(66, 66, 66);	    
+}
+.wrapper {    
+    min-height: 100%;
+    overflow: hidden;
+	display: flex;
+	flex-direction: column;  
+	color: $main;       
+}
+[class*="__container"] {
+	max-width: 1050px;
+	box-sizing: content-box;
+	margin: 0 auto;
+	padding: 15px;
+}
+@media (max-width: 1050px)  {
+        
+}
+@media (max-width: 991.98px)  {
+        
+}
+@media (max-width: 767.98.98px)  {
+    
+    
+}
+@media (max-width: 1050px)  {
+   /*[class*="__container"] {
+        max-width: 970px;        
+    }  */
+}
+@media (max-width: 991.98px)  {
+  /* [class*="__container"] {
+        max-width: 750px;        
+    }   */
+}
+@media (max-width: 767.98px)  {
+    /*[class*="__container"] {
+        max-width: none;        
+    }  */  
+}
+
+
+.main {
+}
+.block {
+
+		// .block__container
+
+		&__container {
+		}
+
+		// .block__items
+
+		&__items {
+		}
+
+		// .block__item
+		
+
+		&__item {
+		}
+}
+.item-block {
+
+		// .item-block__image
+
+		&__image {
+		}
+
+		// .item-block__picture
+
+		&__picture {
+		}
+
+		// .item-block__body
+
+		&__body {
+		}
+
+		// .item-block__title
+
+		&__title {
+		}
+
+		// .item-block__text
+
+		&__text {
+		}
+
+		// .item-block__button
+
+		&__button {
+		}
+}
+
