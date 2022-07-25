@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Moonrocks:regular&display=swap);
+@charset "UTF-8";
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+}
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+[class*=__container] {
+  max-width: 73.125rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  object-fit: contain;
+}
+
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+*/
+/* button {
+		background-color: green;
+		color: white;
+		padding: 10px 15px;
+		cursor: pointer;
+} */
+.some-menu {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgb(252, 202, 138);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+}
+.some-menu__icon {
+  display: none;
+  flex: 0 0 30px;
+  height: 20px;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+}
+.some-menu__icon span {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(105, 105, 105);
+  margin: -1px 0px 0px 0px;
+}
+.some-menu__icon::before, .some-menu__icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: rgb(105, 105, 105);
+}
+.some-menu__icon::before {
+  top: 0;
+}
+.some-menu__icon::after {
+  bottom: 0;
+}
+.some-menu__icon.menu-active span {
+  transform: scale(0);
+}
+.some-menu__icon.menu-active::before {
+  top: 50%;
+  margin: -1px 0 0 0;
+  transform: rotate(-45deg);
+}
+.some-menu__icon.menu-active::after {
+  bottom: 50%;
+  margin: -1px 0 0 0;
+  transform: rotate(45deg);
+}
+@media (max-width: 43.75em) {
+  .some-menu__icon {
+    display: block;
+  }
+}
+.some-menu__body {
+  flex: 1 1 auto;
+}
+@media (max-width: 43.75em) {
+  .some-menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(171, 250, 126);
+    padding: 55px 15px;
+  }
+  .some-menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0px;
+    transition: left 0.3s ease 0s;
+    left: 100%;
+    z-index: 2;
+    background-color: rgb(110, 161, 80);
+  }
+  .some-menu__body.menu-active {
+    left: 0;
+  }
+  .some-menu__body.menu-active::before {
+    left: 0;
+  }
+}
+.some-menu__list {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 43.75em) {
+  .some-menu__list {
+    flex-direction: column;
+  }
+}
+.some-menu__link {
+  color: rgb(78, 78, 78);
+  text-transform: uppercase;
+}
