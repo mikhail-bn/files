@@ -1,0 +1,9 @@
+
+================Инициализация пользователя================
+
+git config --global user.name "mikhail-bn"
+git config --global user.email "mihail.news@gmail.com"
+
+================Проверка================
+
+git config -- list
