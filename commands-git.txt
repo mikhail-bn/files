@@ -7,3 +7,5 @@ git config --global user.email "mihail.news@gmail.com"
 ================��������================
 
 git config --list
+
+================
