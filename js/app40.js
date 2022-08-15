@@ -31,7 +31,16 @@
     const itemFirstButton = listOfButtons[0];
     const itemSecondButton = listOfButtons[1];
     const itemThirdButton = listOfButtons[2];
-    const itemLastButton = listOfButtons[3];   
+    const itemLastButton = listOfButtons[3];
+    console.log(itemFive);
+    console.log(itemTen);
+    console.log(itemFirstButton);
+    console.log(itemLastButton);
+    console.log(itemSecondButton);
+    console.log(listOfParagrafs);
+    console.log(listOfButtons);
+    console.log(pageItem);
+    console.log(itemLast);
     itemLastButton.addEventListener(`click`, scrollToTop);
     function scrollToTop() {
         window.scrollTo({
