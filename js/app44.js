@@ -26,10 +26,8 @@
     const txtItemLimit = txtItem.getAttribute(`maxlength`);
     const txtCounter = document.querySelector(`.textarea__counter span`);
     txtCounter.innerHTML = txtItemLimit;
-    txtItem.addEventListener(`keyup`, txtSetCounter);
-    txtItem.addEventListener(`keydown`, (function(event) {
-        if (event.repeat) txtSetCounter();
-    }));
+    txtItem.addEventListener(`input`, txtSetCounter);
+    
     function txtSetCounter() {
         const txtCounterResult = txtItemLimit - txtItem.value.length;
         txtCounter.innerHTML = txtCounterResult;
