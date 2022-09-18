@@ -260,16 +260,16 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 35em) {
+  .block__items {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 61.99875em) {
   .block__items {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 29.99875em) {
-  .block__items {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
   }
 }
